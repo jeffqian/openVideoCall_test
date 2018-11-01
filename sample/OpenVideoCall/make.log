@@ -1,0 +1,10 @@
+g++ -c -std=c++0x -fPIC -g -fno-omit-frame-pointer -DNDEBUG=1 -Wconversion -O3 -Wall -W -fvisibility=hidden -I. -I./../../include -o "main.o" "main.cpp"
+g++ -c -std=c++0x -fPIC -g -fno-omit-frame-pointer -DNDEBUG=1 -Wconversion -O3 -Wall -W -fvisibility=hidden -I. -I./../../include -o "opt_parser.o" "opt_parser.cpp"
+g++ -c -std=c++0x -fPIC -g -fno-omit-frame-pointer -DNDEBUG=1 -Wconversion -O3 -Wall -W -fvisibility=hidden -I. -I./../../include -o "OpenVideoCallApp.o" "OpenVideoCallApp.cpp"
+g++ -c -std=c++0x -fPIC -g -fno-omit-frame-pointer -DNDEBUG=1 -Wconversion -O3 -Wall -W -fvisibility=hidden -I. -I./../../include -o "View/CommandLineView.o" "View/CommandLineView.cpp"
+g++ -c -std=c++0x -fPIC -g -fno-omit-frame-pointer -DNDEBUG=1 -Wconversion -O3 -Wall -W -fvisibility=hidden -I. -I./../../include -o "Controller/EngineController.o" "Controller/EngineController.cpp"
+g++ -c -std=c++0x -fPIC -g -fno-omit-frame-pointer -DNDEBUG=1 -Wconversion -O3 -Wall -W -fvisibility=hidden -I. -I./../../include -o "Controller/MsgHandler.o" "Controller/MsgHandler.cpp"
+g++ -c -std=c++0x -fPIC -g -fno-omit-frame-pointer -DNDEBUG=1 -Wconversion -O3 -Wall -W -fvisibility=hidden -I. -I./../../include -o "EngineModel/AGCameraManager.o" "EngineModel/AGCameraManager.cpp"
+g++ -c -std=c++0x -fPIC -g -fno-omit-frame-pointer -DNDEBUG=1 -Wconversion -O3 -Wall -W -fvisibility=hidden -I. -I./../../include -o "EngineModel/AGEngineEventHandler.o" "EngineModel/AGEngineEventHandler.cpp"
+g++ -c -std=c++0x -fPIC -g -fno-omit-frame-pointer -DNDEBUG=1 -Wconversion -O3 -Wall -W -fvisibility=hidden -I. -I./../../include -o "EngineModel/AGEngine.o" "EngineModel/AGEngine.cpp"
+Makefile:27: recipe for target 'EngineModel/AGEngine.o' failed

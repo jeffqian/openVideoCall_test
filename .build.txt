@@ -1,0 +1,7 @@
+[repoFolder:media_engine, branch:release/2.3.0, commit:f7a780891195cddd56ac8f062ee3626bcc35ee73]
+[repoFolder:media_sdk3, branch:release/2.3.0, commit:4fc767bf761510742cabc289597bf1a4bc3e807a]
+[repoFolder:audio_engine_private, branch:release/2.3.0, commit:fea6e70552d37f671d3d2fcda22a4ec0f68d6bd6]
+[repoFolder:video_engine_private, branch:release/2.3.0, commit:13aff56f5f3400464ff66ebcc1960015284ceb9c]
+[repoFolder:media_sdk3_private, branch:release/2.3.0, commit:2f775d28894e454c7211abf21aff10bda8f2670a]
+[crosstoolpath:, crosstoolbinpath:, prefix:]
+[repoFolder:OpenVideoCall-Linux, branch:release/2.3.0, commit:fe591707db11c13924514ba66f4e6fcf57d1f85d]
