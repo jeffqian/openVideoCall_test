@@ -3,6 +3,7 @@
 ./openVideoCall  --appId aab8b8f5a8cd4469a63042fcfafe7063 \
                  --uid 1024  \
                  --channel demoChannel \
+                 --dynamicKey 0 \
                  --channelProfile 0 \
                  --audioProfile 0 \
                  --audioScenario 0 \

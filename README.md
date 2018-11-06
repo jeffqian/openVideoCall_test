@@ -52,6 +52,8 @@ command:
   打印设备信息
 - set_cur_camera
   设置当前工作的摄像头，set_cur_camera ‘device id ’ ，device id可以通过print_device_info 得到
+- print_callback 
+  打开/关闭 本地回调打印，print_callback 1 为打开本地音频流发送，print_callback 0 为关闭本地音频流发送
 - exit
   退出程序
   

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <cstring>
+#include <iostream>
 
 #include "IAgoraRtcEngine.h"
 #include "AGEngine.h"
@@ -41,11 +42,18 @@ bool AGEngine::setLogFilePath(const char* logPath)
     return ret == 0 ? true : false;
 }
 
-bool AGEngine::joinChannel(const char* channelId, int uid)
+bool AGEngine::joinChannel(const char* dynamicKey,
+		           const char* channelId, 
+			   int uid)
 {
     int ret = -1;
+    const char tmp[] = "0";
     if(m_agoraEngine) {
-        ret = m_agoraEngine->joinChannel(NULL, channelId, NULL, uid);
+	if (!strcmp(tmp, dynamicKey)) {
+            ret = m_agoraEngine->joinChannel(NULL, channelId, NULL, uid);
+        } else {
+	    ret = m_agoraEngine->joinChannel(dynamicKey, channelId, NULL, uid);
+	}
         if(ret == 0) {
             AParameter msp(*m_agoraEngine);
             msp->setInt("che.video.local.camera_index", 0);
